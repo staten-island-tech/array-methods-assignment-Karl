@@ -1,7 +1,7 @@
 const animals = [
     {
         speciesName: "Monkey",
-        scientificName: "Bleb bleb",
+        scientificName: "(Bleb bleb)",
         location: "Land",
         lifeSpan: 25,
         ancient: true,
@@ -9,7 +9,7 @@ const animals = [
     },
     {
         speciesName: "Blue Whale",
-        scientificName: "bleb bleb",
+        scientificName: "(bleb bleb)",
         location: "Ocean",
         lifeSpan: 85,
         ancient: true,
@@ -17,7 +17,7 @@ const animals = [
     },
     {
         speciesName: "Seal",
-        scientificName: "bleb bleb",
+        scientificName: "(bleb bleb)",
         location: "Ocean",
         lifeSpan: 25,
         ancient: true,
@@ -25,7 +25,7 @@ const animals = [
     },
     {
         speciesName: "Blue Jay",
-        scientificName: "bleb bleb",
+        scientificName: "(bleb bleb)",
         location: "Forest",
         lifeSpan: 25,
         ancient: true,
@@ -34,6 +34,8 @@ const animals = [
     
 ]
 
-animals.forEach((el)=> console.log(el.speciesName));
+
+
+animals.forEach((el)=> console.log(el.speciesName, el.scientificName));
 
 const test = animals.filter((animals)=> "Ocean");
