@@ -1,41 +1,37 @@
 const animals = [
     {
         speciesName: "Monkey",
-        scientificName: "(Bleb bleb)",
+        scientificName: "(Cercopithecidae)",
         location: "Land",
-        lifeSpan: 25,
-        ancient: true,
-        status: "endangered",
+        abilities: ["Climb", "Swing",],
+        status: "Endangered",
     },
     {
         speciesName: "Blue Whale",
-        scientificName: "(bleb bleb)",
+        scientificName: "(Balaenoptera musculus)",
         location: "Ocean",
-        lifeSpan: 85,
-        ancient: true,
-        status: "endangered",
+        abilities: ["Dive", "Roll",],
+        status: "Endangered",
     },
     {
         speciesName: "Seal",
-        scientificName: "(bleb bleb)",
+        scientificName: "(Pinnipedia)",
         location: "Ocean",
-        lifeSpan: 25,
-        ancient: true,
+        abilities: ["Swim", "Wriggle",],
         status: "Least Concern",
     },
     {
         speciesName: "Blue Jay",
-        scientificName: "(bleb bleb)",
+        scientificName: "(Cyanocitta cristata)",
         location: "Forest",
-        lifeSpan: 25,
-        ancient: true,
+        abilities: ["Fly", "Peck",],
         status: "Least Concern",
     },
     
 ]
 
+animals.forEach((name) => console.log(name.speciesName, name.scientificName));
+animals.forEach((name)=> name.abilities.forEach((movement) => console.log(movement)));
 
-
-animals.forEach((el)=> console.log(el.speciesName, el.scientificName));
-
-const test = animals.filter((animals)=> "Ocean");
+const Endangered = animals.filter((name) => name.status === "Endangered");
+console.log(Endangered);
